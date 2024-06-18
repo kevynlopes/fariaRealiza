@@ -26,6 +26,17 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/tailwind.css'],
 
+  imports: {
+    dirs: ['types/.ts', 'store/.ts', 'types/*/.ts'],
+  },
+
+  components: [
+    {
+      path: "~/components",
+      pathPrefix: false,
+    },
+  ],
+
   typescript: {
     tsConfig: {
       compilerOptions: {
